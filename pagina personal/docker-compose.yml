@@ -2,12 +2,12 @@ version: '3.8'
 
 services:
   apache:
-    image: php:8.1-apache   
+    image: php:8.1-apache  
     container_name: apache
     ports:
       - "882:80"
     volumes:
-      - ./src:/var/www/html  
+      - ./src:/var/www/html
     networks:
       - lamp_network
     depends_on:
@@ -20,7 +20,7 @@ services:
     image: mysql:5.7
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: 1234  
       MYSQL_DATABASE: portfolio
       MYSQL_USER: nahia
       MYSQL_PASSWORD: 1234
