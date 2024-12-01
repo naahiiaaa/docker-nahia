@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        
+        h2 {
+            font-family: 'Lora', serif;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--Menú--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto" id="buscador">
+                    <input class="form-control me-2" type="search" placeholder="Buscar proyectos" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Sobre mi-->
+    <section id="sobre-mi">
+        <div class="container mt-5">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Nahia Labiano Etulain tengo 18 años y soy estudiante de Administración de Sistemas Informáticos
+                en Red en CIP Cuatrovientos.</p>
+            <p>Me encanta viajar y tengo la meta de conocer tantos lugares como pueda. Viajar no solo me abre la mente, 
+                sino que también me permite conocer gente nueva y aprender de diferentes culturas, lo cual es una de mis 
+                grandes pasiones. Hay algo realmente especial en descubrir nuevos lugares, probar comidas diferentes y 
+                ver cómo vive la gente en distintas partes del mundo. Cada viaje es una aventura y una oportunidad para 
+                crecer y expandir mis perspectivas.</p>
+            <p>La música es otro de mis grandes intereses; siempre estoy en busca de nuevas canciones y artistas para 
+                descubrir. La música me relaja, me inspira y es una excelente compañía mientras estudio. Ya sea que esté 
+                escuchando algo tranquilo para concentrarme mejor o algo enérgico para animarme, la música siempre tiene
+                 un papel importante en mi vida cotidiana. Me encanta cómo puede cambiar mi estado de ánimo y motivarme 
+                 a seguir adelante, sin importar lo que esté haciendo.</p>
+            <p>Me encanta aprender cosas nuevas, no importa de qué se trate. Ya sea probando cosas por mí misma, hablando 
+                con gente o investigando un poco, creo que el conocimiento es poder y siempre hay algo nuevo que descubrir. 
+                Me gusta adquirir habilidades y encontrar información útil para mi vida y carrera. No tengo preferencias 
+                específicas; desde tecnología y ciencia hasta arte y humanidades, me encanta explorar una variedad de temas 
+                y crecer continuamente. </p>
+            <h2>Estudios</h2>
+            <p>
+                <i class="bi bi-check-square"></i>
+                Bachiller - Lekaroz BHI
+            </p>
+            <p>
+                <i class="bi bi-arrow-clockwise"></i>
+                Grado Superior en Administración de Sistemas Informáticos en Red - CIP Cuatrovientos
+            </p>
+        </div>
+    </section>
+    <!--Proyectos-->
+    <section id="proyectos" class="mt-5">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="row">
+                <!--I3-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./fotos/664635acbd6dc.jpeg" class="card-img-top" alt="I3">
+                        <div class="card-body">
+                            <h5 class="card-title">I3</h5>
+                            <p class="card-text">
+                                I3 es un proyecto colaborativo de los centros Cuatrovientos y Salesianos Pamplona, enfocado 
+                                en crear soluciones tecnológicas para ayudar a personas con dificultades en el entorno 
+                                educativo y comunitario.
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalI3">Más información</button>
+                        </div>
+                    </div>
+                </div>
+                <!--I3 más información-->
+                <div class="modal fade" id="modalI3" tabindex="-1" aria-labelledby="modalI3Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalI3Label">I3</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./fotos/664635acbd6dc.jpeg" class="img-fluid mb-3" alt="I3">
+                                I3 es el proyecto que desarrollamos en colaboración entre Cuatrovientos y Salesianos Pamplona. 
+                                El propósito de este proyecto es crear soluciones tecnológicas que aborden diversas problemáticas 
+                                en el entorno educativo y comunitario, especialmente dirigidas a personas con dificultades. 
+                                Aunque I3 está principalmente enfocado en las aulas, hay un proyecto específico que va dirigido a 
+                                las personas mayores, mejorando su acceso a la tecnología y su calidad de vida. Mediante un enfoque 
+                                de Aprendizaje y Servicio intermodular, interciclos e intercentros, los estudiantes de ambos centros 
+                                trabajan juntos para desarrollar soluciones electrónicas y digitales que mejoren la accesibilidad y 
+                                el bienestar de las personas en su comunidad. Este proyecto nos permitió aplicar nuestras habilidades 
+                                en tecnología y diseño, al mismo tiempo que contribuimos a la mejora de nuestra comunidad local. Fue 
+                                una experiencia muy enriquecedora y significativa.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Kaixomundua.eus-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./fotos/logotipo_kaixomundua-1.jpg" class="card-img-top" alt="Kaixomundua.eus">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaixomundua.eus</h5>
+                            <p class="card-text">
+                                Kaixomundua.eus es un proyecto educativo que promueve las competencias digitales y la creación 
+                                de contenido en euskera. Los estudiantes crean sus propios sitios web y aprenden a ser creadores 
+                                digitales, en lugar de solo consumidores.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKaixomundua">Más información</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Kaixomundua.eus más información-->
+                <div class="modal fade" id="modalKaixomundua" tabindex="-1" aria-labelledby="modalKaixomunduaLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalKaixomunduaLabel">Kaixomundua</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./fotos/KRISEILU.png" class="img-fluid mb-3" alt="Kriseilu">
+                                Kriseilu es el proyecto que desarrollamos para este concurso y lo hicimos con el propósito 
+                                de promover el euskera mediante la creación de una página web. En esta página web, ofrecemos 
+                                música, programas de radio y periódicos en euskera, creando así un espacio donde los usuarios 
+                                pueden buscar todo lo que necesiten de una forma muy sencilla. También contamos con un calendario 
+                                de eventos para promover el euskera, como la Korrika o Nafarroa Oinez, donde la gente puede 
+                                informarse sobre los eventos y ser dirigidos a los enlaces de las páginas originales para más 
+                                detalles. Este proyecto nos permitió aplicar nuestras habilidades en diseño web, y a la vez 
+                                contribuir al fomento de nuestra lengua y cultura.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contacto-->
+    <section id="contacto" class="mt-5">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="formularioContacto" action="mailto:nahialabiano@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-light text-center py-3 mt-5">
+        <div class="container">
+            <p>Copyright &copy; Nahia Labiano Etulain - 2024</p>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!--Mensaje del formulario y buscador de proyectos-->
+    <script>
+        $(document).ready(function() {
+            $('#formularioContacto').on('submit', function(event) {
+                event.preventDefault();
+                if ($('#email').val() && $('#mensaje').val()) {
+                    alert('Formulario enviado correctamente. ¡Gracias!');
+                } else {
+                    alert('Por favor, completa todos los campos.');
+                }
+            });
+
+            $('#buscador').on('submit', function(event) {
+                event.preventDefault();
+                let query = $(this).find('input').val().toLowerCase();
+                $('.card').each(function() {
+                    let projectTitle = $(this).find('.card-title').text().toLowerCase();
+                    if (projectTitle.includes(query)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
